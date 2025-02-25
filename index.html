@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <_fbq ( 'init' , 16881275121' );
+
+	
+	<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .background-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: -2;
+      overflow: hidden;
+    }
+    
+    .background-image,
+    .background-fade,
+    .background-image-desktop {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: top center;
+      transition: opacity 2s ease-in-out;
+      opacity: 0;
+    }
+    
+    .background-image {
+      background-image: url('assets/mobile.png');
+    }
+
+    .background-fade {
+      background-color: rgba(211, 211, 211, 0.8);
+      z-index: 0;
+    }
+    
+    .background-image-desktop {
+      background-image: url('assets/desktop.png');
+      background-color: rgba(211, 211, 211, 0.8);
+    }
+
+    .overlay-desktop {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      overflow: hidden;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      transition-delay: 2s;
+    }
+    
+    .overlay img {
+      width: 320px;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    
+    .overlay-desktop img {
+      width: 600px;
+      height: 375px;
+      object-fit: cover;
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    
+    .fade-in {
+      opacity: 1;
+    }
+
+    .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cookie-box {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            width: 90%;
+        }
+        .cookie-box-button-container {
+          display: flex;
+        }
+        .cookie-box-button {
+            padding: 20px 20px;
+            margin-right: 30px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 12px;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 36px;
+            z-index: 4;
+        }
+        .cookie-box-button:hover {
+            background-color: #555;
+        }
+        .cookie-box p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 36px;
+            text-align: left;
+        }
+        .cookie-box h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 48px;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        .cookie-box a {
+            text-decoration: none;
+        }
+  </style>
+  </head>
+  <body data-disable-user-interaction>
+    <script>
+
+      function isMobileDevice() {
+        return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      }
+
+      window.onload = function() {
+        var backgroundImage = document.getElementById("background-image");
+        if (isMobileDevice()) {
+          backgroundImage.classList.remove("background-image-desktop");
+          backgroundImage.classList.add("background-image");
+        } else {
+          backgroundImage.classList.remove("background-image");
+          backgroundImage.classList.add("background-image-desktop")
+        }
+      };
+
+    </script>
+    <div class="background-container">
+      <div id="background-image" class="fade-in"></div>
+      <div class="background-fade fade-in"></div>
+    </div>
+    <div class="overlay fade-in">
+      <div class="overlay">
+        <div class="cookie-box">
+          <h1>Sugar Defender Cookies Settings</h1>
+          <p>We use cookies and similar technologies to help personalize content, tailor and measure ads, and provide a better experience. By clicking accept, you agree to this, as outlined in our Cookie Policy.</p>    
+          <div class="cookie-box-button-container">
+            <a href="https://sites.google.com/view/belezadepontacabeca/in%C3%ADcio" target="_self">
+              <div class="cookie-box-button">Accept</div>
+            </a>
+      <a href="https://ev.braip.com/campanhas/cpa/cam54rjy2" ads 24022025" target="_self">
+              <div class="cookie-box-button">Not Accept</div>
+            </a>
+          </div>
+        </div>
+    </div>
+    </div>  
+</html>
